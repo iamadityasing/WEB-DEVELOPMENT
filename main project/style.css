@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+::selection{
+  color: #000;
+  background: rgb(209, 58, 58);
+}
+nav{
+  position: fixed;
+  background: #95fed2,rgb(240, 254, 146),rgb(247, 210, 141);
+  width: 100%;
+  padding: 10px 0;
+  z-index: 12;
+}
+nav .menu{
+  max-width: 1250px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.menu .logo a{
+  text-decoration: none;
+  color: rgb(245, 245, 245);
+  font-size: 35px;
+  font-weight: 600;
+}
+.menu ul{
+  display: inline-flex;
+}
+.menu ul li{
+  list-style: none;
+  margin-left: 7px;
+}
+.menu ul li:first-child{
+  margin-left: 0px;
+}
+.menu ul li a{
+  text-decoration: none;
+  color: #fff; 
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.menu ul li a:hover{
+  /* background: rgb(253, 251, 251); */
+  color: black;
+}
+.img{
+  background: url('https://free4kwallpapers.com/uploads/originals/2022/03/28/anime-landscape-for-desktop-sea-ships-colorful-clouds-scenic-tree-horizon-wallpaper.jpg')no-repeat;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.img::before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(1, 1, 1, 0.4);
+}
+.center{
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 0 20px;
+  text-align: center;
+}
+.center .title{
+  color: rgb(239, 247, 245);
+  font-size: 52px;
+  font-weight: 600;
+  font-family: 'Times New Roman', Times, serif;
+  
+}
+.center .sub_title{
+  color: rgb(246, 237, 237);
+  font-size: 50px;
+  font-weight: 600;
+}
+.center .btns{
+  margin-top: 20px;
+}
+.center .btns button{
+  height: 55px;
+  width: 170px;
+  border-radius: 5px;
+  border: none;
+  margin: 0 10px;
+  border: 2px solid rgb(37, 27, 147);
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0 10px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+}
+.center .btns button:first-child:hover{
+    background-image: linear-gradient(to right, #eff36d, #4481eb, #04befe, #caed3f);
+    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+}
+
+.btns button:first-child:hover{
+    background-image: linear-gradient(to right, #eff36d, #4481eb, #04befe, #caed3f);
+    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+}
+
+.center .btns button:last-child:hover{
+    background-image: linear-gradient(to right, #eff36d, #4481eb, #04befe, #caed3f);
+    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+}
+button {
+  border: 2px solid rgb(37, 27, 147);
+  --glow-color: rgb(248, 194, 186);
+  --glow-spread-color: rgba(42, 39, 35, 0.781);
+  --enhanced-glow-color: rgb(115, 175, 224);
+  --btn-color: rgb(246, 232, 172);
+  border: .25em solid var(--glow-color);
+  padding: 1em 1.5em;
+  color: var(--glow-color);
+  font-size: 8px;
+  font-weight: bold;
+  background-color: var(--btn-color);
+  border-radius: .75em;
+  outline: none;
+  box-shadow: 0 0 1em .5em var(--glow-color),
+         0 0 .5em 1em var(--glow-spread-color),
+         inset 0 0 .75em .25em var(--glow-color);
+  text-shadow: 0 0 .5em var(--glow-color);
+  position: relative;
+  transition: all 0.2s;
+ }
+ 
+ button::after {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  top: 120%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--glow-spread-color);
+  filter: blur(2em);
+  opacity: .5;
+  transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+ }
+ 
+ button:hover {
+  color: var(--btn-color);
+  background-color: var(--glow-color);
+  box-shadow: 0 0 1em .25em var(--glow-color),
+         0 0 2em 2em var(--glow-spread-color),
+         inset 0 0 .75em .25em var(--glow-color);
+ }
+ 
+ button:active {
+  box-shadow: 0 0 0.6em .25em var(--glow-color),
+         0 0 2.5em 1em var(--glow-spread-color),
+         inset 0 0 .5em .25em var(--glow-color);
+ }
